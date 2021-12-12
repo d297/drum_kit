@@ -10,7 +10,6 @@ function playSound(e){
 function removeTransition(e){
     if(e.propertyName !== 'transform') return;
     this.classList.remove('playing');
-    console.log('test ssh key')
 }
 
 
@@ -19,5 +18,3 @@ const keys = document.querySelectorAll('.key');
 
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
-
-console.log('creating git branch')
